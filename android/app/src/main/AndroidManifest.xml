@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.the_last_daydream">
+          package="com.lastgimbus.the.last_daydream">
     <application
             android:label="the_last_daydream"
             android:name="${applicationName}"

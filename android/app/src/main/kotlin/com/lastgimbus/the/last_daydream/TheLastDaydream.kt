@@ -1,4 +1,4 @@
-package com.example.the_last_daydream
+package com.lastgimbus.the.last_daydream
 
 import android.service.dreams.DreamService
 import io.flutter.embedding.android.FlutterFragment
