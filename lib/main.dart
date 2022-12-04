@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Expanded(
-              flex: 1,
+              flex: 5,
               child: AnimatedContainer(
                 duration: refreshTime,
                 alignment: align(seconds, r),
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 10,
               child: AnimatedContainer(
                 duration: refreshTime,
                 alignment: align(seconds, r),
@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 10,
               child: AnimatedContainer(
                 duration: refreshTime,
                 alignment: align(seconds, r),
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 20,
               child: AnimatedContainer(
                 duration: refreshTime,
                 alignment: align(seconds, r),
@@ -127,14 +127,14 @@ class BatteryWidget extends StatelessWidget {
         children: [
           CircularProgressIndicator(
             value: snapshot.data! / 100,
-            strokeWidth: 5,
+            strokeWidth: 3.5,
             backgroundColor: const Color(0x33ffffff),
             valueColor: const AlwaysStoppedAnimation<Color>(Color(0xbfffffff)),
           ),
           const SizedBox(width: 16),
           Text(
             "${snapshot.data}%",
-            style: Theme.of(context).textTheme.displayLarge,
+            style: Theme.of(context).textTheme.displayMedium,
           ),
         ],
       ),
